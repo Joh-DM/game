@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdyGasy</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/jq3.js"></script>
+  </head>
+  <body>
+    <button id="btn" onclick="cli()">START</button>
+    <img src="load.gif" alt="" />
+    <section id="game">
+      <h1>Fanorona Mitohy</h1>
+      <section id="jeu">
+        <div data-index="0" class="case"></div>
+        <div data-index="1" class="case"></div>
+        <div data-index="2" class="case"></div>
+        <div data-index="3" class="case"></div>
+        <div data-index="4" class="case"></div>
+        <div data-index="5" class="case"></div>
+        <div data-index="6" class="case"></div>
+        <div data-index="7" class="case"></div>
+        <div data-index="8" class="case"></div>
+      </section>
+      <h2></h2>
+      <button id="recommencer">Averina</button>
+
+      <script src="js/scripts.js"></script>
+    </section>
+  </body>
+  <script>
+    function cli() {
+      $("#game").fadeToggle(3000);
+      $("#btn").fadeOut();
+      $("img").fadeOut();
+    }
+    $("#recommencer").click(function () {
+      $("#game").fadeOut().fadeIn();
+    });
+  </script>
+</html>

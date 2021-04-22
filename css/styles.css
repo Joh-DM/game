@@ -1,0 +1,80 @@
+body {
+  text-align: center;
+  background-image: url("../614656.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#btn {
+  font-size: 10px;
+  border: orange solid 2px;
+  transition: ease-in-out 0.2s;
+  position: absolute;
+  top: 60%;
+  left: 47%;
+  animation: anim 0.3s 5s infinite;
+  opacity: 0;
+}
+@keyframes anim {
+  0% {
+    opacity: 0;
+    display: inherit !important;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+img {
+  margin-top: 15%;
+}
+#btn:hover {
+  background-color: orangered;
+  border: teal solid 2px;
+}
+section {
+  background-color: rgba(12, 12, 12, 0.7);
+  width: auto;
+  height: 100%;
+  display: none;
+}
+#jeu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+  margin: auto;
+  box-shadow: 10px 10px 10px black;
+  border: 6px teal solid;
+}
+.case:hover {
+  background-color: rgb(125, 167, 43);
+}
+button {
+  border: none;
+  background-color: teal;
+  color: white;
+  font-size: 20px;
+  padding: 7px 30px;
+  outline: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+h1 {
+  color: tomato;
+  font-family: monospace;
+  text-shadow: 10px 10px 10px rgb(156, 56, 38);
+  font-size: 40px;
+}
+h2 {
+  font-size: 20px;
+  font-family: monospace;
+  color: whitesmoke;
+}
+
+.case {
+  border: 1px solid white;
+  height: 100px;
+  line-height: 0px;
+  font-size: 50px;
+  background-color: yellowgreen;
+  cursor: pointer;
+}
